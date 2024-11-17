@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Contact</title>
+    <style>
+        body{
+            margin:0;
+        }
+
+        nav{
+            width: 100%;
+            height: 75px;
+            position: absolute;
+
+            display: flex;
+            z-index: 2;
+        }
+        
+        .logo{
+            height: 150px;
+            width: 180px;
+            width: 13%;
+            position: relative;
+            bottom: 30px;
+            left: 100px;
+            margin-right: 10%;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: gray;
+            font-size: 150%;
+            margin-left: 5%;
+            letter-spacing: 3px;
+            position: relative;
+            top: 37px;
+            transition: 0.5s;
+        }
+
+        .line{
+            text-decoration: underline;
+            text-decoration-color: #FFBF00;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 7px;
+            color: #FFC96F;
+            text-shadow: 0px 0px 1px yellow;
+        }
+
+        nav a:hover{
+            color: #FFC96F;
+            text-shadow: 0px 0px 1px yellow;
+        }
+
+        .banner{
+            width: 100%;
+            height: 350px;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        .a{
+            height: 100px;
+            width: 50%;
+            color:gray;
+            position: absolute;
+            top:235px;
+            left: 25%;
+            font-family: sans-serif;
+            font-size: 19px;
+        }
+
+        .banner h1{
+            font-family: sans-serif;
+            font-size: 700%;
+            position: absolute;
+            top:35px;
+            left: 31%;
+            color: #FFBF00;
+        }
+
+        .location{
+            background: white;
+            height: 400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+
+        .map{
+            background-image: url("mapp.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .maptext{
+       
+            position: relative;
+            left: 250px;
+            left: 30%;
+            top: 15px;
+            width: 80%;
+            height: 300px;
+          
+           
+        }
+
+        .maptext h1{
+            color:  #FFBF00;
+            font-size: 200%;
+            position: relative;
+            top:20px;
+         
+        }
+
+        .maptext p{
+            color:  gray;
+        }
+
+        .maptext img{
+            height: 100%;
+            width: 100%;
+          
+        }
+
+        .t{
+            display: grid;
+            grid-template-columns: 10% 90%;
+        }
+
+        .bg{
+            border-radius: 10px;
+            background: #FFBF00;
+        }
+
+        .text{
+            font-family: sans-serif;
+            line-height: 14px;
+            letter-spacing: 1px;
+            font-size: small;
+            position: relative;
+            left:-15px;
+            top: 5px;;
+            color: gray;
+
+        }
+
+        .text b{
+           color:  #FFBF00;
+           position: relative;
+           left: 30px; 
+           font-weight: 200;
+        }
+     
+
+        .form{
+            height: 700px;
+            width: 100%;
+            background: whitesmoke;
+        }
+
+        .none{display: none;}
+       
+        form{
+            width: 600px;
+            height: 530px;
+            background: white;
+            border-radius: 10px;
+            position: absolute;
+            left: 30%;
+            top:800px;
+            box-shadow: 0 0 5px black;
+        }
+
+        .name{
+            height: 40px;
+            width: 45%;
+            margin: 10px;
+     
+        }
+
+        .contacts{
+            margin: 10px;
+            height: 40px;
+            width: 45%;
+      
+        }
+
+        .gmail{
+            margin: 10px;
+            height: 40px;
+            width: 95%;
+       
+        }
+
+        .feedback{
+            margin: 10px;
+            height: 180px;
+            width: 95%;
+
+        }
+
+        form h1{
+            font-family: sans-serif;
+            font-size: 200%;
+            position: relative;
+            text-align: center;
+            color: #FFBF00;
+            top:10px;
+        }
+        
+        .btn{
+            text-align: center;
+            padding:20px 40%;
+            color:white;
+            font-size: 200%;
+            background:  linear-gradient(#FFBF00,#FFA62F);;
+            border-radius: 10px;
+            margin:10px;
+            position: relative;
+            bottom:5px
+
+        }
+
+        .btn:active{
+            background: yellow;
+        }
+
+        footer{
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(#FFBF00,#FFA62F);;
+            text-align: center;
+        }
+
+        footer h1{
+            font-family: sans-serif;
+            font-size: 200%;
+            position: absolute;
+            text-align: center;
+            color: whitesmoke;
+            top:1450px;
+            left:43%;
+        }
+
+        footer img{
+            height: 50px;
+            width: 50px;
+            margin-right: 2%;
+        }
+
+        @media (max-width:500px){
+         nav a{
+            text-decoration: none;
+            color: gray;
+            font-size: 90%;
+            margin-right: 0%;
+            letter-spacing: 1px;
+            position: relative;
+           left: 7%;
+         
+            top: 30px;
+            transition: 0.5s;
+          }
+
+          .line{
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+          }
+
+          .logo{
+            display: none;
+         }
+
+         .banner{
+            height: 180px;
+         }
+
+         .banner h1{
+            position: absolute;
+            font-size: 300%;
+            left: 19%;
+            top:35px;
+
+            
+         }
+
+         .a{
+            position: absolute;
+            height: 50px;
+            width: 50%;
+            font-size: xx-small;
+            top:120px;
+          
+         }
+
+         .maptext{
+            text-align: center;
+            grid-row: 2/3;
+            position: relative;
+            top:0px;
+            left: 0; 
+            bottom: 200px;
+            width: 100%;
+         }
+
+
+         .location{
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(1,1fr);
+         }
+         .map{height: 200px;}
+
+         .t{
+           display:none;
+         }
+         .maptext h1{
+            color:  #FFBF00;
+            font-size: 100%;
+            position: relative;
+            top:0px;
+         
+        }
+
+        .maptext p{
+            position: relative;
+            bottom: 12px;
+            font-size: x-small;
+        }
+        .m{
+        width: 100%; 
+        height: 120px;   
+        position: relative;
+        bottom: 30px;
+    
+        
+        }
+
+        .none{display: block;
+            width: 100%;         
+             height: 120px;  
+            display: grid;
+            grid-template-columns: 50% 50%;
+         }
+
+        .mobile{
+            text-align: center;
+        }
+
+        .mobile img{
+            height: 80px;
+            width: 50%;
+            background: #FFBF00;
+            border-radius: 10px;
+        }
+        .none li{
+            font-size:  x-small;
+            list-style: none;
+            position: relative;
+            bottom: 15px;
+            right: 20px;
+            color: gray;
+            font-family: sans-serif;
+
+        }
+        
+        form{
+            height: 300px;
+            width: 90%;
+            position: relative;
+            top:5%;
+            left:5%;
+         
+        }
+
+        .form{
+            height: 350px;
+        }
+
+        .name{
+            height: 20px;
+            width: 95%;
+            margin: 2px;
+     
+     
+        }
+
+        .contacts{
+            height: 20px;
+            width: 95%;
+            margin: 3px;
+          
+        
+        }
+
+        .gmail{
+            height: 20px;
+            width: 96%;
+            margin: 2px;
+       
+        }
+
+        .feedback{
+            margin: 2px;
+            height: 100px;
+            width: 96%;
+
+        }
+
+        .btn{
+            padding:5px 10px;
+            position: relative;
+            bottom: 8px;
+            font-size: small;
+         
+        }
+
+        footer{
+            height: 150px;
+        }
+
+        footer h1{
+            top:955px;
+            left:40%;
+            font-size: 100%;
+     
+        }
+
+        footer img{
+            position: relative;
+            bottom:50px;            
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" class="logo">
+            <a href="index.html" > Home </a>
+            <a href="menu.html" > Menu </a>
+            <a href="promo.html"> Promo </a>
+            <a href="about.html"> About </a>
+            <a href="contact.html" class="line"> Contact </a>
+        </nav>
+    </header>
+
+    <div class="contact">
+
+        <section class="banner">
+            <h1> Contact us </h1>
+            <div class="a">
+                <p> get in touch and let us know how can we help. </p>
+            </div>
+
+            
+            
+        </section>
+
+        <section class="location">
+            <div class="maptext">
+             
+                <h1> Get in touch</h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Id nam culpa reiciendis odit earum accusantium?
+                </p>
+                <br>
+                <div class="m">
+
+                    <div class="none">
+                        <div class="mobile">
+                            <img src="mail.png" alt="">
+                            <ul>
+                                <li>krelianquimson@gmail.com </li>
+                                <li>&</li>
+                                <li> markjamesAbella@gmail.com</li>
+                            </ul>   
+                        </div>
+    
+                        <div class="mobile">
+                            <img src="phone.png" alt="">
+                            <ul>
+                                <li> 09099897185 </li>
+                                <li>&</li>
+                                <li> 09098781233</li>
+                            </ul>   
+                        </div>
+                    </div>
+                   
+
+
+                    <div class="t">
+                        <div class="bg">
+                            <img src="mail.png" alt="">
+                        </div>
+
+                         <div class="text">
+                            <b> Email </b> <br>
+                            <ul>
+                                <li>krelianquimson@gmail.com </li>
+                                <li> markjamesAbella@gmail.com</li>
+                            </ul>                   
+                        </div> 
+
+                    </div> 
+                    
+                    <br>
+    
+                    <div class="t">
+                        <div class="bg">
+                            <img src="phone.png" alt="">
+                        </div>
+                    
+                         <div class="text">
+                            <b> Number </b> <br>
+                            <ul>
+                                <li> 09099897185 </li>
+                                <li> 09098781233</li>
+                            </ul>                   
+                        </div>   
+                    </div>  
+
+                </div>            
+
+            </div>
+
+            <div class="map">
+               
+            </div>
+        </section>
+
+        <section class="form">
+
+            <form>
+                <h1> Customer Feedback </h1>
+                <input type="text" class="name" placeholder="Full name">  <input type="number" class="contacts" placeholder="Phone-number"> <br>
+                <input type="email" class="gmail" placeholder="Email"> <br>
+                <input type="text" class="feedback" placeholder="Message">
+                <div class="btn"> Submit </div>
+
+            </form>
+
+        </section> 
+
+        <footer>
+            <h1> Follow us on </h1>
+            <br><br><br><br><br>
+            <img src="fb.png" alt="">
+            <img src="ig.png" alt="">
+            <img src="twt.png" alt="">
+        </footer>
+    </div>
+</body>
+</html>
