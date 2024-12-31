@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="rosh.ico" type="image/x-icon">
+    <title>UDT's Menu</title>
+    <style>
+        body{
+            margin:0;
+        }
+
+        nav{
+            width: 100%;
+            height: 75px;
+            position: absolute;
+            top:-3px;
+            display: flex;
+            z-index: 2;
+        }
+        
+        .logo{
+            height: 150px;
+            width: 180px;
+            width: 13%;
+            position: relative;
+            bottom: 30px;
+            left: 100px;
+            margin-right: 10%;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: gray;
+            font-size: 150%;
+            margin-left: 5%;
+            letter-spacing: 3px;
+            position: relative;
+            top: 37px;
+            transition: 0.5s;
+        }
+
+        .line{
+            text-decoration: underline;
+            text-decoration-color: #FFBF00;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 7px;
+            color: #FFC96F;
+            text-shadow: 0px 0px 1px yellow;
+        }
+
+        nav a:hover{
+            color: #FFC96F;
+            text-shadow: 0px 0px 1px yellow;
+        }
+
+        .menu{
+            height: 600px;
+            width: 100%;
+        
+            text-align: center;
+            position: relative;
+            top: 90px;
+        }
+
+       /* 
+        }*/
+
+        .menu h1{
+            letter-spacing: 5px;
+            color: #FFBF00;
+        }
+
+        h1 b{
+       
+            letter-spacing: 1px;
+            font-family: sans-serif;
+        }
+
+        .con{
+            width: 50%;
+            height: 80px;
+            position: relative;
+            left: 25%;
+            bottom:3%;
+        }
+
+        .con p{
+            color: gray;
+            font-size: 1.1em;
+            position: relative;
+            top:5px;
+        }
+
+        .parent{
+            width: 80%;
+            height: 190px;
+           
+            position: relative;
+            left: 8%;
+            display: grid;
+            grid-template-columns: 20% 80%;
+            margin-bottom: 40px;
+        }
+
+        .icon{
+            background:linear-gradient(#FFBF00,#FF9A00);
+            overflow: hidden;
+            box-shadow: 0 0 5px black ;
+         
+        }
+        .scroll{
+            background: whitesmoke    ;  
+            text-align: left;
+            overflow: auto;
+            display: flex;
+            gap: 40px;
+        }
+
+     
+
+
+        .icon img{
+            height: 85%;
+            width: 85%;
+            position: relative;
+            top:16px;
+            box-shadow: 0 0 5px black inset;
+        }
+
+        footer{
+            background: #F99417;
+            width: 100%;
+            height: 20px;
+            position: relative;
+            top:125px;
+        }
+
+        .scroll img{
+            height: 160px;
+            width: 180px;
+            position: relative;
+            left: 1%;
+            top:5px;
+            transition: 1s;
+
+        }
+
+        .scroll img:hover{
+            box-shadow: 0px 0px 10px 2px #F99417;
+        }
+      
+
+        @media (max-width:500px)
+        {
+            .scroll img:hover{
+            box-shadow: none;
+            }
+      
+            nav a{
+            text-decoration: none;
+            color: gray;
+            font-size: 90%;
+            margin-right: 0%;
+            letter-spacing: 1px;
+            position: relative;
+           left: 7%;
+         
+            top: 30px;
+            transition: 0.5s;
+          }
+
+          .line{
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+          }
+
+          .logo{
+            display: none;
+         }
+
+         .menu{
+            position: relative;
+            top:80px;
+   
+         }
+
+         .a{
+            height: 100px;
+            width: 100px;
+            background:linear-gradient(#FFBF00,#FFA62F);
+            border-radius: 10px;
+            text-align: center;
+            line-height: 28px;
+            margin: 5px;
+         }
+
+         .menu h1{
+            padding: 0;
+            display: inline;
+            letter-spacing: 5px;
+
+            position: relative;
+            top:13px;
+         
+            border-radius: 10px;
+            color: whitesmoke;
+         }
+
+         .con{ 
+            text-align: left;
+            width: 67%;
+            height: 100px;
+            position: relative;
+            bottom:105px;
+            left:29%;
+            font-size: 12px;
+         }
+         .con p{
+            position: relative;
+            top:-5px;
+          
+            color:gray;
+            font-size: 1.3em;
+         }
+         .parent{
+            grid-template-columns: 100%;
+            width: 100%;
+            height: 250px;
+            left: 0%;
+            bottom: 100px;
+            margin-bottom: 10px;
+         }
+         .scroll{
+            gap:5px;
+        
+         }
+
+         .scroll img{
+            height: 230px;
+            width: 100%;
+         }
+         .icon{
+            display: none;
+         }
+
+         footer{
+            background: #F99417;
+            width: 100%;
+            height: 20px;
+            position: relative;
+            top:110px;
+        }
+      
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" class="logo">
+            <a href="index.html" > Home </a>
+            <a href="" class="line"> Menu </a>
+           <a href="promo.html"> Promo </a>
+            <a href="about.html"> About </a>
+            <a href="contact.html"> Contact </a>
+        </nav>
+    </header>
+    <div class="menu">
+        
+        <div class="a"> <h1> UDT  <b>Menu</b> </h1> </div>
+        <div class="con">
+            <!--
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus inventore  dicta ex Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, voluptatum? ullam quae porro consectetur autem, voluptates ut. Qui molestias recusandae velit aut debitis iure magnam tempore.</p>
+            -->
+            <p> we offer a delicious selection of 9 gourmet burgers and 8 refreshing drinks. Each burger is crafted with premium ingredients, ensuring every bite is a burst of flavor.</p>
+        </div>
+
+        <div class="parent">
+            <div class="icon">
+                <img src="icon1.png" alt="">
+            </div>          
+            <div class="scroll">
+                <img src="b11.png" id="b1">
+                <img src="b22.png" id="b2">
+                <img src="b55.png" id="b3">                    
+                <img src="b33.png" id="b4">
+                <img src="b44.png" id="b5">
+                <img src="b66.png" id="b6">
+                <img src="b77.png" id="b7">
+                <img src="b88.png" id="b8">
+                <img src="b99.png" id="b9">
+            </div>   
+        </div>
+
+        <div class="parent">
+            <div class="icon">
+                <img src="icon2.png" alt="">
+            </div>
+            <div class="scroll">
+                <img src="d11.png" id="d1">
+                <img src="d2.png" id="d2">
+                <img src="d3.png" id="d3">
+                <img src="d4.png" id="d4">
+                <img src="d5.png" id="d5">
+                <img src="d6.png" id="d6">
+                <img src="d7.png" id="d7">
+                <img src="d8.png" id="d8">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        
+    </footer>
+
+    <script>
+
+
+
+        let b1 = document.getElementById("b1");
+        let b2 = document.getElementById("b2");
+        let b3 = document.getElementById("b3");
+        let b4 = document.getElementById("b4");
+        let b5 = document.getElementById("b5");
+        let b6 = document.getElementById("b6");
+        let b7 = document.getElementById("b7");
+        let b8 = document.getElementById("b8");
+        let b9 = document.getElementById("b9");
+
+        let d1 = document.getElementById("d1");
+        let d2 = document.getElementById("d2");
+        let d3 = document.getElementById("d3");
+        let d4 = document.getElementById("d4");
+        let d5 = document.getElementById("d5");
+        let d6 = document.getElementById("d6");
+        let d7 = document.getElementById("d7");
+        let d8 = document.getElementById("d8");
+
+
+        b1.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 299;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price)alert("not enough cash!");
+            } 
+        })
+
+
+        b2.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 250;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");   
+            } 
+        })
+
+
+        b3.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 399;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price)alert("not enough cash!");
+            } 
+        })
+
+
+        b4.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 280;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+
+
+        b5.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 330;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price)alert("not enough cash!");
+            } 
+        })
+
+
+        b6.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 370;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");   
+            } 
+        })
+
+
+        b7.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 300;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price)alert("not enough cash!");
+            } 
+        })
+
+
+        b8.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 230;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+
+        b9.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 310;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+
+        d1.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 80;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+       
+        d2.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 90;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+
+        d3.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 100;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+       
+        d4.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 30;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+
+        d5.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 60;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+       
+        d6.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 90;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+
+        d7.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 50;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+       
+        d8.addEventListener("click",()=>{
+            if(confirm("do you want to buy this?"))
+            {
+                let price = 40;
+                let payment = parseInt(prompt(`enter payment:    price: $${price}`)); 
+                if(payment >= price)
+                {
+                    let change = payment - price;
+                    alert(`thankyou!            change: $${change}`);
+                } 
+                else if(payment < price) alert("not enough cash!");
+            } 
+        })
+       
+    </script>
+</body>
+</html>

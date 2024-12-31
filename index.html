@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="rosh.ico" type="image/x-icon">
+    <title> UDT's Home page  </title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+
+        body{
+         margin:0;
+         
+        }
+
+        .home{
+          width: 100%;
+          height: 764px;
+          display: grid;
+          grid-template-columns: 75% 25%;
+
+            overflow: hidden;
+        }
+
+        .container1{
+         background: whitesmoke;
+         width: 100%;
+         height: 100%;
+
+        }
+
+        nav{
+            width: 100%;
+            height: 75px;
+            position: absolute;
+            display: flex;
+            z-index: 2;
+        }
+        
+        .logo{
+            height: 150px;
+            width: 180px;
+            width: 13%;
+            position: relative;
+            bottom: 30px;
+            left: 100px;
+            margin-right: 10%;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: gray;
+            font-size: 150%;
+            margin-right: 5%;
+            letter-spacing: 3px;
+            position: relative;
+            top: 37px;
+            transition: 0.5s;
+        }
+
+        .line{
+            text-decoration: underline;
+            text-decoration-color: #FFBF00;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 7px;
+            color: #FFC96F;
+            text-shadow: 0px 0px 1px yellow;
+        }
+
+        nav a:hover{
+            color: #FFC96F;
+            text-shadow: 0px 0px 1px yellow;
+        }
+
+        .textbox{
+            height: 400px;
+            width: 65%;
+            position: relative;
+            top:250px;
+            left:120px;
+        }
+
+
+        .textbox p{
+            font-size: small;
+            color: gray;
+            position: relative;
+            left: 10px;
+        }
+
+        .name{
+            font-family: "Lilita One", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 550%;
+            color: #FEB941 ;  
+            letter-spacing: 7px;
+            line-height: 80px;
+            text-shadow: 0 0 2px black;
+        }
+       
+        #b{
+            color: #EE4E4E;
+            font-size: 100%;
+            position: relative;
+        
+        }
+
+        .btn{
+            padding:13px;
+            background: #EE4E4E;
+            color: white;
+            font-size: 150%;
+            font-family: serif;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            position: relative;
+            top: 20px;
+            box-shadow: 0 0 3px black;
+            font-family: "Lilita One", sans-serif;
+            font-weight: 60;
+        }
+
+        .btn:active{
+            background: #7D0A0A;
+        }
+
+        .container2{
+         background: linear-gradient(#FFBF00,#FFA62F);
+         width: 100%;
+         height: 100%;   
+        }
+
+        .burger{
+            height: 550px;
+            width: 500px;
+            position: relative;
+            top:120px;
+            right: 280px;
+        }
+
+        @media  screen and (max-width:500px){
+            
+        body{
+            margin: 0;
+        }
+
+        .home{
+          width: 100%;
+          height: 735px;
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+
+        }
+
+        .logo{
+            height: 150px;
+            width: 180px;
+            position: absolute;
+            top:70%;
+            left:27.5%;
+            bottom: 0px;
+            right: 0;
+            margin-right: 0px;
+        }
+        
+        nav a{
+            text-decoration: none;
+            color: gray;
+            font-size: 90%;
+            margin-right: 5%;
+            letter-spacing: 1px;
+            position: relative;
+            right: 0%;
+            left:12%;
+            top: 30px;
+            transition: 0.5s;
+        }
+
+        .line{
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
+        .container1{
+            height: 600px;
+            width: 100%;
+        }
+
+        .textbox{
+            width: 90%;
+            height: 350px;
+            right: 0;
+            left: 3%;
+            top:30%;
+            bottom: 0;
+            text-align: center;
+        }
+
+
+
+        .name{
+            font-size: 350%;
+            color: #FEB941 ;  
+            letter-spacing: 3px;
+            line-height: 50px;
+            text-shadow: 0 0 2px black;
+            justify-content: center;
+        }
+
+        .n{
+            display: none;
+        }
+
+        .textbox p{
+            font-size: xx-small;
+            color: gray;
+            position: relative;
+            left: 0px;
+           
+        }
+
+        .con{
+            height: 100px;
+            width: 80%;
+            position: relative;
+            left: 10%;
+        }
+        .btn{
+            padding:10px;
+            font-size: 100%;
+            letter-spacing: 1px;
+            position: relative;
+            top: -30px;
+        }
+
+        .container2{
+            height: 135px;
+            width: 100%;
+        }
+
+        .burger{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top:440px;
+            right: 13%;
+            
+        }
+
+        .burger{
+            height: 300px;
+            width: 300px;
+            position: relative;
+            top:-170px;
+            right: 0%;
+            left: 11%;
+          
+        }
+        
+     }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" class="logo">
+            <a href="" class="line"> Home </a>
+            <a href="menu.html"> Menu </a>
+            <a href="promo.html"> Promo </a>
+            <a href="about.html"> About </a>
+            <a href="contact.html"> Contact </a>
+        </nav>
+    </header>
+
+    <div class="home">
+     
+        <div class="container1">
+            <div class="textbox">
+            
+                <b class="name"> ROSH <b class="name" id="b">BURGER</b> </b>
+                <b class="name"> OVERLOAD </b>
+                <div class="con">
+                    <p>
+                       Craving the perfect burger? 🍔 Look no further! At UDT'S Burger Shop, we serve mouthwatering, handcrafted burgers made with the freshest ingredients, delivered straight to your doorstep. 
+                        <font class="n">Satisfy your hunger and experience burger bliss today! Order now and taste the difference!</font>
+                         
+                    </p>
+                </div>              
+                <b class="btn"> Get now </b>             
+            </div>
+        </div>
+
+        <div class="container2">
+            <img src="burger.png" class="burger">
+        </div>
+
+    </div>
+</body>
+</html>

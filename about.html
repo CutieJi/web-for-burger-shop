@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="rosh.ico" type="image/x-icon">
+    <title>UDT's About Us</title>
+    <style>
+        body{
+            margin:0;
+        }
+
+        nav{
+            width: 100%;
+            height: 75px;
+            position: absolute;
+
+            display: flex;
+            z-index: 2;
+        }
+        
+        .logo{
+            height: 150px;
+            width: 180px;
+            width: 13%;
+            position: relative;
+            bottom: 30px;
+            left: 100px;
+            margin-right: 10%;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: gray;
+            font-size: 150%;
+            margin-left: 5%;
+            letter-spacing: 3px;
+            position: relative;
+            top: 37px;
+            transition: 0.5s;
+        }
+
+        .line{
+            text-decoration: underline;
+            text-decoration-color: #FFBF00;
+            text-decoration-thickness: 3px;
+            text-underline-offset: 7px;
+            color: #FFC96F;
+            text-shadow: 0px 0px 1px yellow;
+        }
+
+        nav a:hover{
+            color: #FFC96F;
+            text-shadow: 0px 0px 1px yellow;
+        }
+
+        .about{
+            width: 100%;
+            height: 1200px;
+        }
+
+        .info{
+            width: 70%;
+            height: 980px;
+            position: relative;
+            top:8%;
+            left:16%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 30px;       
+              color: #191919;
+              font-family: sans-serif;
+              font-size: 19px;
+  
+        }
+
+        .info div{
+
+
+        }
+
+        .info h1{
+            font-size: 200%;
+            color: #FFBF00;
+        }
+
+        .info p{
+            position: relative;
+            bottom:25px;
+        }
+        
+       
+
+        .gridinfo2{
+            background-image: url("about1.jpg");
+            background-size: 100%;
+           
+        }
+
+
+        .gridinfo3{
+            background-image: url("about222.jpg");
+            background-size: 100%;
+           
+
+        }
+
+        .gridinfo6{
+            background-image: url("about3.jpg");
+            background-size: 100%;
+           
+        }
+
+
+        .leader{
+            box-shadow: 0 0 10px black inset;
+            width: 100%;
+            height: 480px;
+            position: relative;
+            top:250px;
+            background: #FF9A00;
+            text-align: center;
+        }
+
+        .leader h1{
+            font-size: 200%;
+            color: whitesmoke;
+            font-family: sans-serif;
+            position: relative;
+            top:20px;
+        }
+
+        .leadbox{
+            width: 60%;
+            height: 360px;
+            
+            position: relative;
+            left:20%;
+            top:30px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap:50px;
+        }
+
+        .leadbox div{
+            font-family: sans-serif;
+            color:white;
+            letter-spacing: 2px;
+            line-height: 8px;
+        }
+
+        .leadbox h3{
+
+            color:white;
+        }
+        .circle{
+  
+            width: 100%;
+            height: 250px;
+            background: white;
+            border-radius: 10%;
+            padding: 10px;
+            
+
+        }
+
+        #prof1{
+            background-image: url("pic11.jpg");
+            background-size: 100%;
+        }
+
+        #prof2{
+            background-image: url("pic22.jpg");
+            background-size: 100%;
+        }
+
+        #prof3{
+            background-image: url("pic333.jpg");
+            background-size: 100%;
+        }
+
+        .m{
+            display: none;
+        }
+
+
+        .review{
+        background: white;
+        height: 450px;
+        width: 100%;  
+        position: relative;
+        top:220px;
+        text-align: center;
+       }
+
+       .review h1{
+            font-size: 150%;
+            color: #FFBF00;
+            font-family: sans-serif;
+            position: relative;
+            top:20px;
+       }
+
+       .box{
+        background: whitesmoke;
+        height: 340px;
+        width: 40%;
+        position: relative;
+        left: 30%;
+        top:30px;
+        display: flex;
+        overflow: auto;
+   
+       }
+
+       .box img{
+        text-align: left;
+        height: 230px;
+        width: 65%;
+        position: relative;
+        top:45px;
+        margin: 20px;
+       }
+
+
+        @media (max-width:500px){
+            nav a{
+            text-decoration: none;
+            color: gray;
+            font-size: 90%;
+            margin-right: 0%;
+            letter-spacing: 1px;
+            position: relative;
+           left: 7%;
+         
+            top: 30px;
+            transition: 0.5s;
+          }
+
+          .line{
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+          }
+
+          .logo{
+            display: none;
+         }
+
+            .info{
+                width: 100%;
+                display:inline;
+                left: 0;
+                top: 0;
+                top:100px;
+                text-align: center;
+             
+            }
+            .info div{
+                
+            }
+
+            .gridinfo6{
+            display: none;
+        }
+
+        .gridinfo2{
+            width: 100%;
+            height: 200px;
+        }
+
+        .gridinfo1{
+            width: 100%;
+            height: 200px;
+            position: relative;
+            bottom:10px;
+        }
+        .gridinfo3{
+            display: none;
+        }
+        
+        .gridinfo4{
+            background-image: url("about2222.jpg");
+            background-size: 100%;
+        
+            width: 100%;
+            height: 220px;
+           
+        }
+
+        .gridinfo5{
+            background-image: url("about33.jpg");
+            background-size: 100%;
+          
+            width: 100%;
+            height: 215px;
+        }
+
+        .info h1{
+            font-size: 25px;
+            color: #EEF7FF;
+          
+        }
+            .info p{
+            font-family: sans-serif;
+            color: #F1F6F9;
+            position: relative;
+            bottom:15px;
+            font-size: 12px;
+        }
+
+        .con{
+            text-align: left;
+            position: relative;
+            left: 10%;
+            width: 80%;
+            height: 180px;
+
+            border: 1px solid rgb(255, 255, 255, .0);
+
+            position: relative;
+            top:10px;
+        }
+
+        #con1{
+            text-align: right;
+        }
+        #con2{
+            position: relative;
+            top:40px;
+            text-align: center;
+            left: 0%;
+            width: 100%;
+            height: 200px;
+
+        }
+
+        #con2 h1{
+           color: #FFBF00;
+        }
+
+        #con2 p{
+            color: #191919;
+        }
+        .leader{
+            position: relative;
+            top:90px;
+            height: 220px;
+            background: whitesmoke;
+            box-shadow: 0 0 0px black inset;
+        }
+        .leadbox{
+            width: 100%;
+            grid-gap:10px;
+            left: 2%;
+            
+        }
+
+        .circle{
+            height: 80px;
+            width: 70%;
+        }
+
+        .leadbox h3{
+            color: black;
+            font-size: xx-small;
+            display:none;
+        }
+
+        .leader h1{
+            color: #FFBF00;
+            font-size: 100%;
+  
+
+        }
+
+        .leadbox b{
+            color: black;
+            font-size: xx-small;
+            position: relative;
+            top:10px;
+            right: 5%;
+        }
+        .leadbox div{
+            font-family: sans-serif;
+            color:white;
+            letter-spacing: 0-px;
+            line-height: 3px;
+        }
+
+        .m{
+            width: 80%;
+            position: relative;
+            top:10px;
+            left: 4%;
+            display: block;
+        }
+        .leadbox p{
+            font-family: sans-serif;
+            color:gray;
+            font-size: xx-small;
+            letter-spacing: 0px;
+            line-height: 7px;
+        }
+
+        .review{
+            height: 250px;
+            background-color: #FF9A00;
+            top:60px;
+        }
+
+        .review h1{
+            font-size: medium;
+            color: white;
+        }
+
+        .box{
+            left: 15%;
+            width: 70%;
+            height: 130px;
+        }
+
+        .box img{
+            height: 100px;
+            top:5px;
+            margin:10px;
+        }
+
+        .about{
+            position: relative;
+            bottom:80px;
+        }
+
+        }
+
+      
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" class="logo">
+            <a href="index.html" > Home </a>
+            <a href="menu.html" > Menu </a>
+            <a href="promo.html"> Promo </a>
+            <a href="about.html" class="line"> About </a>
+            <a href="contact.html" > Contact </a>
+        </nav>
+    </header>
+
+    <div class="about">
+
+        <section class="info">
+            <div class="gridinfo1">
+            <div class="con" id="con2">
+             <h1> Our story</h1>   
+             <!--      
+             <p id="i">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. eat reprehenderit ullam fugit nostrum quis accusantium non pariatur error illo, iure animi possimus unde ipsam harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veritatis nihil officiis velit. Ipsam ex inventore culpa rem soluta error enim tenetur aperiam. Ducimus natus voluptatibus accusamus quam eos aut perspiciatis obcaecati id? Eius blanditiis, vero quo placeat eveniet error.
+             </p>
+             -->  
+             <p>   Located in the heart of Bulacan, our journey began with a simple mission: to create the best burgers using the freshest ingredients. Founded by food enthusiasts with a passion for great taste, UDT's Burger quickly became a local favorite. Each burger is crafted with care, combining unique recipes and a love for delicious food. Join us at UDT's Burger and experience the taste that brings the community together!</p>
+            </div>
+            </div>
+            <div class="gridinfo2">
+
+            </div>
+
+
+            <div class="gridinfo3">
+
+            </div>
+            <div class="gridinfo4">
+                <div class="con" >
+                <h1> Mission </h1>
+                   <!--   
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum aliquid officiis rerum quam illo incidunt nisi repellendus, pariatur corrupti dolor.
+                    praesentium suscipit?  illo, iure animi possimus unde ipsam harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veritatis nihil officiis velit. Ipsam ex inventore culpa rem soluta error enim tenetur aperiam. Ducimus natus voluptatibus accusamus quam eos aut perspiciatis obcaecati id? Eius blanditiis, vero quo placeat eveniet error.
+                </p>
+                  -->  
+                <p>
+                    At UDT's Burger, our mission is to serve the finest, most flavorful burgers that bring joy to every customer. We are committed to using high-quality, locally-sourced ingredients to craft mouth-watering creations. Our goal is to provide an exceptional dining experience with outstanding service in a welcoming atmosphere. We strive to be a beloved part of the Cavite community, fostering connections through great food and genuine hospitality.
+                </p>
+            </div>
+            </div>
+
+
+            <div class="gridinfo5">
+                <div class="con" id="con1">
+                <h1> Vision </h1>
+                <!--
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. TemporeAliasullam fugit nostrum quis accusantium non pariatur error illo, iure animi possimus unde ipsam harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde veritatis nihil officiis velit. Ipsam ex inventore culpa rem soluta error enim tenetur aperiam. Ducimus natus voluptatibus accusamus quam eos aut perspiciatis obcaecati id? Eius blanditiis, vero quo placeat eveniet error.
+                </p>
+                -->
+                <p>
+                    our vision is to become the premier destination for burger enthusiasts in Cavite and beyond. We aim to innovate continually, creating exciting and delicious menu offerings that set us apart. We envision a future where UDT's Burger is synonymous with quality and culinary excellence. Our goal is to expand our reach while maintaining our commitment to exceptional taste and outstanding customer service.
+                </p>
+            </div>
+            </div>
+            <div class="gridinfo6">
+
+            </div>
+        </section>
+
+        <section class="leader">
+            <h1> Meet our leaders</h1>
+            <div class="leadbox">
+
+                <div >
+                    <div class="circle" id="prof1">
+                
+                    </div>
+                    <br>
+                    <h3>Rosh Ingel</h2>
+                    <b> CEO </b>
+                    <div class="m">
+                        <p>Rosh Ingel<br> </p>
+                    </div>
+                </div>
+
+                <div >
+                    <div class="circle" id="prof2">
+                        
+                    </div>
+                    <br>
+                    <h3>Rosh Ingel</h2>
+                    <b> Head Chef</b>
+                    <div class="m">
+                        <p>Rosh Ingel <br> </p>
+                    </div>
+                </div>
+
+                <div >
+                    <div class="circle" id="prof3">
+                        
+                    </div>
+                    <br>
+                    <h3>Rosh Ingel</h2>
+                    <b>Manager</b>
+                    <div class="m">
+                        <p>Rosh Ingel<br> </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="review">
+            <h1> People think about us </h1>
+            <div class="box">
+                <img src="r11.jpg" alt="">
+                <img src="r2.jpg" alt="">
+                <img src="r33.jpg" alt="">
+                <img src="r4.jpg" alt="">
+                <img src="r55.jpg" alt="">
+            </div>
+        </section>
+ 
+    </div>
+</body>
+</html>
